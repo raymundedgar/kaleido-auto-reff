@@ -22,7 +22,7 @@ An automated registration bot for Kaleido Finance with proxy support and anti-de
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/airdropinsiders/kaleido-auto-reff.git
+git clone https://github.com/raymundedgar/kaleido-auto-reff.git
 cd kaleido-auto-reff
 ```
 
