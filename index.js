@@ -197,19 +197,13 @@ async function main() {
         console.log(chalk.cyan(`📡 Loaded ${proxyList.length} proxies`));
 
         // Get user input
-        let refCode = await question(chalk.green('\n📋 Enter your referral code: '));
+        let refCode = "RMMN27WB";
         while (!refCode.trim()) {
             console.log(chalk.red('❌ Referral code cannot be empty. Please try again.'));
             refCode = await question(chalk.green('📋 Enter your referral code: '));
         }
 
-        let numAccounts;
-        while (true) {
-            const input = await question(chalk.green('🔢 Enter number of accounts to register: '));
-            numAccounts = parseInt(input);
-            if (!isNaN(numAccounts) && numAccounts > 0) break;
-            console.log(chalk.red('❌ Please enter a valid number greater than 0.'));
-        }
+        let numAccounts = 1;
 
         console.log(chalk.cyan('\n🚀 Starting registration process...'));
         console.log(chalk.cyan(`📊 Target: ${numAccounts} accounts using referral code: ${refCode}`));
